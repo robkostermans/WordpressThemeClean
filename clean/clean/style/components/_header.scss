@@ -1,0 +1,48 @@
+﻿@import "_config.scss";
+.vibrant-color-palette{
+    > div{
+        display:inline-block;
+        width:.75em;
+        height:.75em;
+        transition:background-color 2s;
+        &.Vibrant{background-color:$vibrant;}
+        &.Muted{background-color:$muted;}
+        &.DarkVibrant{background-color:rgb(4, 16, 8);}
+        &.DarkMuted{background-color:rgb(95, 95, 95);}
+        &.LightVibrant{background-color:rgb(225, 225, 225);}
+        &.LightMuted{background-color:rgb(225, 225, 225);}
+    }
+    
+}
+
+
+
+.site-header{
+    position:fixed;
+    z-index:1000;
+}
+
+.site-paging{
+}
+
+.site-cell{
+    display:inline-block;
+    padding-right:1em;
+}
+
+.site-side-panel{
+    white-space:nowrap;
+    position:absolute;
+    left:1.5em;
+    transform:rotate(90deg);
+    transform-origin:0 0;
+    width:100px;
+    line-height:100px;
+    left:100px;
+    top:1em;
+}
+.site-navigation{
+    .nav-previous, .nav-next{
+        display:inline-block;
+    }
+}

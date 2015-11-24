@@ -1,0 +1,157 @@
+﻿/**
+ * 7.0 Accessibility
+ */
+/* Text meant only for screen readers */
+.says,
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px; }
+
+/* must have higher specificity than alternative color schemes inline styles */
+.site .skip-link {
+  background-color: #f1f1f1;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+  color: #21759b;
+  display: block;
+  font: bold 14px/normal "Noto Sans", sans-serif;
+  left: -9999em;
+  outline: none;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  text-transform: none;
+  top: -9999em; }
+
+.logged-in .site .skip-link {
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  font: bold 14px/normal "Open Sans", sans-serif; }
+
+.site .skip-link:focus {
+  clip: auto;
+  height: auto;
+  left: 6px;
+  top: 7px;
+  width: auto;
+  z-index: 100000; }
+
+.article-main {
+  max-width: 800px;
+  margin-left: 100px;
+  padding-right: 20px; }
+
+.vibrant-color-palette > div {
+  display: inline-block;
+  width: .75em;
+  height: .75em;
+  transition: background-color 2s; }
+  .vibrant-color-palette > div.Vibrant {
+    background-color: #424242; }
+  .vibrant-color-palette > div.Muted {
+    background-color: #a4a4a4; }
+  .vibrant-color-palette > div.DarkVibrant {
+    background-color: #041008; }
+  .vibrant-color-palette > div.DarkMuted {
+    background-color: #5f5f5f; }
+  .vibrant-color-palette > div.LightVibrant {
+    background-color: #e1e1e1; }
+  .vibrant-color-palette > div.LightMuted {
+    background-color: #e1e1e1; }
+
+.site-header {
+  position: fixed;
+  z-index: 1000; }
+
+.site-cell {
+  display: inline-block;
+  padding-right: 1em; }
+
+.site-side-panel {
+  white-space: nowrap;
+  position: absolute;
+  left: 1.5em;
+  transform: rotate(90deg);
+  transform-origin: 0 0;
+  width: 100px;
+  line-height: 100px;
+  left: 100px;
+  top: 1em; }
+
+.site-navigation .nav-previous, .site-navigation .nav-next {
+  display: inline-block; }
+
+a {
+  transition: color .4s;
+  color: #424242;
+  text-decoration: none;
+  font-weight: 500; }
+  a:visited {
+    color: #424242; }
+  a:hover {
+    color: #a4a4a4; }
+
+.article-main {
+  padding-top: 0; }
+
+.article-body > p:first-child {
+  font-size: 1.5em; }
+
+.article-header {
+  position: relative;
+  overflow: hidden; }
+  .article-header .bg-img {
+    background-color: #424242;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%; }
+    .article-header .bg-img img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      min-width: 50%;
+      min-height: 50%;
+      opacity: 0;
+      transition: opacity .4s; }
+      .vibrant-applied .article-header .bg-img img {
+        opacity: 1; }
+  .article-header .title {
+    position: relative; }
+  .article-header h1 {
+    position: relative;
+    z-index: 100;
+    color: rgba(66, 66, 66, 0);
+    margin: 0; }
+  .article-header canvas {
+    z-index: 90;
+    position: absolute;
+    top: 0;
+    background: #f0f0f1; }
+  .article-header .subline {
+    display: none;
+    margin: 0;
+    background-color: #f0f0f0; }
+
+html {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: #424242;
+  margin: 0;
+  background: #f0f0f1; }
+
+h1 {
+  font-size: 7em;
+  line-height: 1; }
+
+h2 {
+  font-size: 1.5em; }
+

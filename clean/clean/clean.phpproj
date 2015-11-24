@@ -8,6 +8,13 @@
     <RootNamespace>clean</RootNamespace>
     <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
     <AssemblyName>clean</AssemblyName>
+    <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+    <Server>PHPDev</Server>
+    <PublishEvent>None</PublishEvent>
+    <PHPDevAutoPort>True</PHPDevAutoPort>
+    <PHPDevPort>19249</PHPDevPort>
+    <PHPDevHostName>localhost</PHPDevHostName>
+    <IISProjectUrl>http://localhost:19249/</IISProjectUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <IncludeDebugInformation>true</IncludeDebugInformation>
@@ -16,6 +23,29 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="content-single.php" />
+    <Compile Include="footer.php" />
+    <Compile Include="functions.php" />
+    <Compile Include="header.php" />
     <Compile Include="index.php" />
+    <Compile Include="_single.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="js\" />
+    <Folder Include="style\" />
+    <Folder Include="style\components\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\clean.js" />
+    <Content Include="js\clean.min.js" />
+    <Content Include="style.css" />
+    <Content Include="style\clean.css" />
+    <Content Include="style\clean.min.css" />
+    <Content Include="style\clean.scss" />
+    <Content Include="style\components\_accessibility.scss" />
+    <Content Include="style\components\_article.scss" />
+    <Content Include="style\components\_config.scss" />
+    <Content Include="style\components\_header.scss" />
+    <Content Include="style\components\_layout.scss" />
   </ItemGroup>
 </Project>
